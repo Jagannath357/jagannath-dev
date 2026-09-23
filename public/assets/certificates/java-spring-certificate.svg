@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" fill="none">
+  <rect width="800" height="550" rx="16" fill="#0B0F19" stroke="#F59E0B" stroke-width="4"/>
+  <rect x="20" y="20" width="760" height="510" rx="12" fill="#131B2E" stroke="#1E293B" stroke-width="2"/>
+  <text x="400" y="90" font-family="'Outfit', sans-serif" font-weight="800" font-size="30" fill="#F59E0B" text-anchor="middle">JAVA &amp; SPRING BOOT FULL STACK</text>
+  <text x="400" y="190" font-family="'Outfit', sans-serif" font-weight="800" font-size="38" fill="#F8FAFC" text-anchor="middle">Jagannath Padhi</text>
+  <text x="400" y="240" font-family="sans-serif" font-size="16" fill="#CBD5E1" text-anchor="middle">Core Java, Spring Boot Microservices, REST APIs, and JPA / Hibernate</text>
+</svg>
