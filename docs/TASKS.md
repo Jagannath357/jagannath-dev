@@ -28,6 +28,7 @@
 - [x] Added `@media (prefers-reduced-motion: reduce)` accessibility overrides for background, 3D, and cartoon animations
 - [x] Verified zero backend dependencies and tested production build (`npm run build` completed cleanly in 1.93s)
 - [x] Enhanced `Navbar.jsx` with full device responsiveness (<1024px mobile/tablet viewports), slide-over sidebar drawer with backdrop overlay, locked body scroll, section icons, and dynamic Menu <-> Cross (X) toggle button state
+- [x] Verified resume file name & path (`Jagannath_Padhi_Resume.pdf` under `/public/assets/documents/`) and updated `skills.js` with new skills (`Node.js`, `Express.js`, `Antigravity`) while preserving all existing skills
 
 ## BACKLOG
 - None

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { skillsData } from '../../data/skills';
 import { SectionHeading } from '../../components/ui/SectionHeading';
 import { Badge } from '../../components/ui/Badge';
-import { Search, Code2, Server, Database, Wrench, BookOpen, Terminal, Cpu, Atom, Palette, Layout, Layers, Zap, Globe, HardDrive, GitBranch, Github, Send, FileText, Box, Binary, Table, Monitor, Network, LayoutGrid } from 'lucide-react';
+import { Search, Code2, Server, Database, Wrench, BookOpen, Terminal, Cpu, Atom, Palette, Layout, Layers, Zap, Globe, HardDrive, GitBranch, Github, Send, FileText, Box, Binary, Table, Monitor, Network, LayoutGrid, Sparkles } from 'lucide-react';
 
 const iconMap = {
   Coffee: Server,
@@ -29,7 +29,8 @@ const iconMap = {
   Table: Table,
   Monitor: Monitor,
   Network: Network,
-  LayoutGrid: LayoutGrid
+  LayoutGrid: LayoutGrid,
+  Sparkles: Sparkles
 };
 
 export const Skills = () => {

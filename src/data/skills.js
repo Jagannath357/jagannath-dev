@@ -13,6 +13,8 @@ export const skillsData = [
     category: "Backend Development",
     description: "Server-side architectures, REST APIs, enterprise frameworks, and database persistence.",
     skills: [
+      { name: "Node.js", level: "Proficient", icon: "Server" },
+      { name: "Express.js", level: "Proficient", icon: "Zap" },
       { name: "Spring Boot", level: "Proficient", icon: "Zap" },
       { name: "Spring MVC", level: "Proficient", icon: "Cpu" },
       { name: "JDBC", level: "Proficient", icon: "Database" },
@@ -44,13 +46,14 @@ export const skillsData = [
   },
   {
     category: "Tools & IDEs",
-    description: "Version control, API testing, build utilities, and software development environments.",
+    description: "Version control, API testing, build utilities, AI tools, and software development environments.",
     skills: [
       { name: "Git & GitHub", level: "Proficient", icon: "GitBranch" },
       { name: "Postman", level: "Proficient", icon: "Send" },
       { name: "Swagger", level: "Working Knowledge", icon: "FileText" },
       { name: "VS Code", level: "Proficient", icon: "Box" },
-      { name: "Eclipse & STS", level: "Working Knowledge", icon: "Box" }
+      { name: "Eclipse & STS", level: "Working Knowledge", icon: "Box" },
+      { name: "Antigravity", level: "Proficient", icon: "Sparkles" }
     ]
   },
   {
@@ -65,3 +68,4 @@ export const skillsData = [
     ]
   }
 ];
+
