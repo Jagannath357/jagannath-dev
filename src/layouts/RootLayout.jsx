@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { CertificateModal } from '../components/certificates/CertificateModal';
+import { ResumeModal } from '../components/common/ResumeModal';
 import { AnimatedBackground } from '../components/common/AnimatedBackground';
 
 export const RootLayout = () => {
@@ -24,6 +25,7 @@ export const RootLayout = () => {
       </div>
       <Footer />
       <CertificateModal />
+      <ResumeModal />
     </div>
   );
 };

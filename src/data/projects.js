@@ -76,7 +76,7 @@ export const projectsData = [
     date: "2024",
     github: "https://github.com/Jagannath357",
     liveDemo: "",
-    image: "/assets/projects/post-web-app.png",
+    image: "/assets/projects/customer-lead-crm.png",
     features: [
       "Developed a full-stack CRM to manage customer leads, follow-ups, statuses, priorities, and lead types",
       "Implemented REST APIs, CRUD operations, search/filtering, validation, dashboard, and follow-up management",

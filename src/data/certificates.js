@@ -1,5 +1,78 @@
 export const certificatesData = [
   {
+    id: "silicon-summer-internship-2026",
+    title: "Summer Internship Course-2026 — Full Stack with Java Spring Boot, Angular & MySQL",
+    shortTitle: "Silicon University — Summer Internship Course-2026",
+    issuer: "Silicon University, Odisha",
+    organization: "Silicon University, Odisha",
+    issueDate: "25 May 2026 – 4 July 2026",
+    duration: "25 May 2026 – 4 July 2026",
+    courseTitle: "Full Stack with Java Spring Boot, Angular & MySQL",
+    type: "Summer Internship",
+    domain: "Full Stack Web Development",
+    category: "Internship",
+    description: `I successfully completed the Summer Internship Course-2026 on “Full Stack with Java Spring Boot, Angular & MySQL” at Silicon University, Odisha, from 25 May 2026 to 4 July 2026.
+
+The internship provided practical exposure to full-stack web development and strengthened my understanding of Java, Spring Boot, Angular, MySQL, frontend and backend integration, and full-stack application development.
+
+The experience helped me understand how different layers of a web application work together to build practical and scalable software solutions.`,
+    image: "/assets/certificates/java-spring-certificate.png",
+    downloadUrl: "/assets/certificates/java-spring-certificate.png",
+    featured: true,
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "MySQL",
+      "Frontend Development",
+      "Backend Development",
+      "Frontend & Backend Integration",
+      "Full-Stack Application Development",
+      "REST API",
+      "Database Integration",
+      "Web Application Development",
+      "Software Development"
+    ],
+    skillsLearned: [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "MySQL",
+      "Frontend & Backend Integration",
+      "RESTful API Development",
+      "Database Integration",
+      "Full-Stack Application Development"
+    ],
+    categorizedSkills: {
+      "Backend": [
+        "Java",
+        "Spring Boot",
+        "Backend Development",
+        "RESTful API Development",
+        "Backend Application Structure"
+      ],
+      "Frontend": [
+        "Angular",
+        "Component-Based UI Development",
+        "Frontend Development",
+        "Responsive Web Development"
+      ],
+      "Database": [
+        "MySQL",
+        "Database Integration",
+        "CRUD Operations",
+        "Relational Database Concepts"
+      ],
+      "Full Stack": [
+        "Frontend & Backend Integration",
+        "API Integration",
+        "Full-Stack Application Development",
+        "Client-Server Architecture",
+        "End-to-End Web Application Development"
+      ]
+    }
+  },
+  {
     id: "silicon-portfolio-cert",
     title: "Silicon University — Portfolio Development",
     issuer: "Silicon University",

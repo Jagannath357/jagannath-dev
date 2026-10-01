@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { openResumeModal } from '../../store/slices/uiSlice';
 import { socialLinks } from '../../data/socialLinks';
 import { profileData } from '../../data/profile';
 import { SectionHeading } from '../../components/ui/SectionHeading';
 import { Button } from '../../components/ui/Button';
-import { Mail, Copy, Check, Github, Linkedin, FileDown, MapPin, Send, MessageSquare } from 'lucide-react';
+import { Mail, Copy, Check, Github, Linkedin, FileDown, FileText, MapPin, Send, MessageSquare } from 'lucide-react';
 
 export const Contact = () => {
+  const dispatch = useDispatch();
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
@@ -112,8 +115,8 @@ export const Contact = () => {
             </div>
           </div>
 
-          <Button href={socialLinks.resume} download="Jagannath_Padhi_Resume.pdf" variant="secondary" size="lg" icon={FileDown} className="w-full">
-            Download Resume PDF
+          <Button onClick={() => dispatch(openResumeModal())} variant="secondary" size="lg" icon={FileText} className="w-full">
+            View Resume PDF
           </Button>
         </div>
 

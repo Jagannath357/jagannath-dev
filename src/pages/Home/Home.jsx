@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { openCertificateModal } from '../../store/slices/uiSlice';
+import { openCertificateModal, openResumeModal } from '../../store/slices/uiSlice';
 import { profileData } from '../../data/profile';
 import { projectsData } from '../../data/projects';
 import { certificatesData } from '../../data/certificates';
@@ -20,6 +20,7 @@ import { HeroRoleSwitcher } from '../../components/common/HeroRoleSwitcher';
 import {
   ArrowRight,
   FileDown,
+  FileText,
   Mail,
   Github,
   Linkedin,
@@ -81,8 +82,8 @@ export const Home = () => {
                   View My Projects
                 </Button>
                 
-                <Button href={socialLinks.resume} download="Jagannath_Padhi_Resume.pdf" variant="secondary" size="lg" icon={FileDown}>
-                  Download Resume
+                <Button onClick={() => dispatch(openResumeModal())} variant="secondary" size="lg" icon={FileText}>
+                  View Resume
                 </Button>
                 
                 <Button to="/contact" variant="outline" size="lg" icon={Mail}>
@@ -345,8 +346,8 @@ export const Home = () => {
             <Button to="/contact" variant="secondary" size="lg" icon={Mail}>
               Let's Connect
             </Button>
-            <Button href={socialLinks.resume} download="Jagannath_Padhi_Resume.pdf" variant="outline" size="lg" className="border-white text-white hover:bg-white/10" icon={FileDown}>
-              Download Resume
+            <Button onClick={() => dispatch(openResumeModal())} variant="outline" size="lg" className="border-white text-white hover:bg-white/10" icon={FileText}>
+              View Resume
             </Button>
           </div>
         </div>

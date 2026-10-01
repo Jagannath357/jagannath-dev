@@ -24,11 +24,12 @@ To showcase **Jagannath Padhi**, a Computer Science and Engineering student at S
 | **Quick Stats** | Highlighting key milestones: 9.71 CGPA, 150+ LeetCode DSA, 3+ Internships, Top Hackathon Ranks | Implemented |
 | **Theme System** | Redux-backed global Dark/Light toggle with instant sync and local storage persistence | Implemented |
 | **Projects Showcase** | Interactive filtering (All, React, Java, Spring Boot, AI/ML, Full Stack), detail modal & routes | Implemented |
-| **Certificate Viewer** | Filterable catalog with high-resolution modal preview and direct local download | Implemented |
-| **Experience Timeline** | Chronological timeline of internships (Silicon University, 1Stop, Academor) | Implemented |
+| **Certificate Viewer** | Filterable catalog with high-resolution modal preview, detailed internship metadata, categorized skills, and direct local download | Implemented |
+| **Resume PDF Viewer** | Interactive theme-aware modal & dedicated `/resume` route with live PDF iframe preview and dedicated Download Resume action | Implemented |
+| **Experience Timeline** | Chronological timeline of internships (Silicon University Summer Internship 2026, 1Stop, Academor) | Implemented |
 | **Categorized Skills** | Structured layout covering Languages, Frontend, Backend, Databases, Tools, CS Core | Implemented |
 | **Direct Contact** | One-click copy email, mailto link, LinkedIn, GitHub, downloadable PDF resume | Implemented |
-| **Responsive Nav** | Glassmorphism sticky navbar with animated mobile drawer menu | Implemented |
+| **Responsive Nav** | Glassmorphism sticky navbar with animated mobile drawer menu and interactive Menu/Cross toggle button | Implemented |
 | **404 Page** | Dynamic theme-aware page not found fallback | Implemented |
 
 ## 5. Non-Functional Requirements

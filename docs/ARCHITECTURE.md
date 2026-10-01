@@ -35,6 +35,7 @@ portfolio/
 │   │   │   ├── AnimatedBackground.jsx
 │   │   │   ├── CartoonBackgroundObjects.jsx
 │   │   │   ├── HeroRoleSwitcher.jsx
+│   │   │   ├── ResumeModal.jsx
 │   │   │   ├── ThreeDObjects.jsx
 │   │   │   └── ThemeToggle.jsx
 │   │   ├── layout/
@@ -68,6 +69,7 @@ portfolio/
 │   │   ├── NotFound/
 │   │   ├── ProjectDetails/
 │   │   ├── Projects/
+│   │   ├── Resume/
 │   │   └── Skills/
 │   ├── store/
 │   │   ├── slices/

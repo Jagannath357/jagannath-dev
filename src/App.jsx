@@ -10,6 +10,7 @@ import { Certificates } from './pages/Certificates/Certificates';
 import { Experience } from './pages/Experience/Experience';
 import { Achievements } from './pages/Achievements/Achievements';
 import { Contact } from './pages/Contact/Contact';
+import { Resume } from './pages/Resume/Resume';
 import { NotFound } from './pages/NotFound/NotFound';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="experience" element={<Experience />} />
           <Route path="achievements" element={<Achievements />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

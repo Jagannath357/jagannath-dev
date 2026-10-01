@@ -1,13 +1,17 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { openResumeModal } from '../../store/slices/uiSlice';
 import { profileData } from '../../data/profile';
 import { educationData } from '../../data/education';
 import { socialLinks } from '../../data/socialLinks';
 import { SectionHeading } from '../../components/ui/SectionHeading';
 import { Button } from '../../components/ui/Button';
 import { Badge } from '../../components/ui/Badge';
-import { GraduationCap, Award, BookOpen, Code, FileDown, CheckCircle2, UserCheck } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Code, FileDown, FileText, CheckCircle2, UserCheck } from 'lucide-react';
 
 export const About = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
       
@@ -55,8 +59,8 @@ export const About = () => {
               <p><strong className="text-slate-900 dark:text-white">Email:</strong> {profileData.email}</p>
             </div>
             <div className="pt-2">
-              <Button href={socialLinks.resume} download="Jagannath_Padhi_Resume.pdf" variant="primary" size="sm" icon={FileDown} className="w-full">
-                Download Official Resume
+              <Button onClick={() => dispatch(openResumeModal())} variant="primary" size="sm" icon={FileText} className="w-full">
+                View Official Resume
               </Button>
             </div>
           </div>

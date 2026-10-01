@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleMobileMenu, closeMobileMenu } from '../../store/slices/uiSlice';
+import { toggleMobileMenu, closeMobileMenu, openResumeModal } from '../../store/slices/uiSlice';
 import { ThemeToggle } from '../common/ThemeToggle';
 import { socialLinks } from '../../data/socialLinks';
 import { 
   Menu, 
   X, 
   FileDown, 
+  FileText,
   Code2, 
   Home, 
   User, 
@@ -107,16 +108,15 @@ export const Navbar = () => {
 
             {/* Right Side Action Controls */}
             <div className="flex items-center gap-2.5 sm:gap-3">
-              {/* Desktop Resume Download Button */}
-              <a
-                href={socialLinks.resume}
-                download="Jagannath_Padhi_Resume.pdf"
-                className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-brand-600 to-brand-accent hover:from-brand-700 hover:to-indigo-700 shadow-sm shadow-brand-500/20 transition-all hover:scale-[1.02] active:scale-95"
-                title="Download Resume PDF"
+              {/* Desktop Resume Viewer Button */}
+              <button
+                onClick={() => dispatch(openResumeModal())}
+                className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-brand-600 to-brand-accent hover:from-brand-700 hover:to-indigo-700 shadow-sm shadow-brand-500/20 transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+                title="View & Inspect Resume PDF"
               >
-                <FileDown className="w-4 h-4" />
+                <FileText className="w-4 h-4" />
                 <span>Resume</span>
-              </a>
+              </button>
 
               {/* Theme Switcher Toggle Button */}
               <ThemeToggle />
@@ -227,15 +227,17 @@ export const Navbar = () => {
 
         {/* Sidebar Footer Action Controls */}
         <div className="p-5 border-t border-slate-200 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/30 space-y-4">
-          {/* Download Resume Button inside Sidebar */}
-          <a
-            href={socialLinks.resume}
-            download="Jagannath_Padhi_Resume.pdf"
-            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-brand-600 to-brand-accent hover:from-brand-700 hover:to-indigo-700 shadow-md shadow-brand-500/20 active:scale-98 transition-all"
+          {/* View Resume Button inside Sidebar */}
+          <button
+            onClick={() => {
+              dispatch(closeMobileMenu());
+              dispatch(openResumeModal());
+            }}
+            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-brand-600 to-brand-accent hover:from-brand-700 hover:to-indigo-700 shadow-md shadow-brand-500/20 active:scale-98 transition-all cursor-pointer"
           >
-            <FileDown className="w-5 h-5" />
-            <span>Download Resume PDF</span>
-          </a>
+            <FileText className="w-5 h-5" />
+            <span>View Resume PDF</span>
+          </button>
 
           {/* Quick Social Icons inside Sidebar */}
           <div className="flex items-center justify-center gap-3 pt-2">

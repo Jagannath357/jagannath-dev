@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { openResumeModal } from '../../store/slices/uiSlice';
 import { socialLinks } from '../../data/socialLinks';
 import { Github, Linkedin, Mail, FileText, Heart, Code2 } from 'lucide-react';
 
 export const Footer = () => {
+  const dispatch = useDispatch();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -48,14 +51,14 @@ export const Footer = () => {
               >
                 <Mail className="w-5 h-5" />
               </a>
-              <a
-                href={socialLinks.resume}
-                download="Jagannath_Padhi_Resume.pdf"
-                className="p-2.5 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:scale-110 transition-all border border-slate-200 dark:border-slate-700/60 shadow-xs"
-                aria-label="Download Resume"
+              <button
+                onClick={() => dispatch(openResumeModal())}
+                className="p-2.5 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:scale-110 transition-all border border-slate-200 dark:border-slate-700/60 shadow-xs cursor-pointer"
+                aria-label="View Resume PDF"
+                title="View & Inspect Resume PDF"
               >
                 <FileText className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -77,12 +80,17 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to="/skills" className="text-slate-600 dark:text-slate-400 hover:text-brand-500 dark:hover:text-brand-400 transition-colors">
-                  Skills & Stack
+                  Skills &amp; Stack
                 </Link>
               </li>
               <li>
                 <Link to="/projects" className="text-slate-600 dark:text-slate-400 hover:text-brand-500 dark:hover:text-brand-400 transition-colors">
                   Featured Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/resume" className="text-slate-600 dark:text-slate-400 hover:text-brand-500 dark:hover:text-brand-400 transition-colors">
+                  Resume / CV
                 </Link>
               </li>
             </ul>

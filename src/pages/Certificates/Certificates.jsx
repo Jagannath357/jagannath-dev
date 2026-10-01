@@ -88,12 +88,28 @@ export const Certificates = () => {
                   </h3>
 
                   <p className="text-xs font-semibold text-brand-600 dark:text-brand-400">
-                    {issuer}
+                    {cert.organization || issuer}
                   </p>
 
                   <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2 leading-relaxed">
                     {description}
                   </p>
+
+                  {/* Technology Badges */}
+                  {(cert.skillsLearned || cert.technologies) && (
+                    <div className="flex flex-wrap gap-1 pt-1">
+                      {(cert.skillsLearned || cert.technologies).slice(0, 4).map((tech, idx) => (
+                        <Badge key={idx} variant="slate" size="xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                      {(cert.skillsLearned || cert.technologies).length > 4 && (
+                        <Badge variant="brand" size="xs">
+                          +{(cert.skillsLearned || cert.technologies).length - 4} more
+                        </Badge>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
 

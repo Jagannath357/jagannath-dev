@@ -29,6 +29,9 @@
 - [x] Verified zero backend dependencies and tested production build (`npm run build` completed cleanly in 1.93s)
 - [x] Enhanced `Navbar.jsx` with full device responsiveness (<1024px mobile/tablet viewports), slide-over sidebar drawer with backdrop overlay, locked body scroll, section icons, and dynamic Menu <-> Cross (X) toggle button state
 - [x] Verified resume file name & path (`Jagannath_Padhi_Resume.pdf` under `/public/assets/documents/`) and updated `skills.js` with new skills (`Node.js`, `Express.js`, `Antigravity`) while preserving all existing skills
+- [x] Updated Customer Lead CRM project image path in `projects.js` to `/assets/projects/customer-lead-crm.png` (`public/assets/projects/customer-lead-crm.png`)
+- [x] Added Silicon University Summer Internship Course-2026 certificate entry ("Full Stack with Java Spring Boot, Angular & MySQL", 25 May 2026 – 4 July 2026) with image `/assets/certificates/java-spring-certificate.png`, technology badges, and categorized skills learned
+- [x] Built interactive Resume PDF Viewer (`ResumeModal.jsx` and `/resume` route `Resume.jsx`) with live PDF iframe preview, keyboard/backdrop dismiss, theme responsiveness, and explicit "Download Resume" action button across all site CTA triggers
 
 ## BACKLOG
 - None
